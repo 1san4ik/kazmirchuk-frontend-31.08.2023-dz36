@@ -1,0 +1,108 @@
+.divForm {
+  position: absolute;
+  max-width: 400px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  visibility: hidden;
+}
+
+.form-block {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#inputFirstName {
+  margin-left: 5px;
+  min-width: 75%;
+}
+#inputLastName {
+  margin-left: 5px;
+  min-width: 65%;
+}
+#inputBirth {
+  margin-left: 5px;
+  min-width: 53%;
+}
+#selectCity {
+  margin-left: 5px;
+  min-width: 73%;
+  height: 22px;
+}
+#adress {
+  margin-left: 5px;
+  min-width: 73%;
+}
+fieldset {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  margin-right: 5px;
+}
+/* ----------------button-------------------- */
+.btn1,
+.btn2,
+.btn3 {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.btn1:active,
+.btn2:active,
+.btn3:active {
+  background-color: #216a94;
+}
+.btn3 {
+  margin-top: 20px;
+  margin-left: 155px;
+}
+/* -----------------Table--------------------- */
+.dataTable {
+  display: none;
+}
+
+.dataTable th {
+  background-color: #333;
+  min-width: 130px;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+.dataTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.dataTable tbody tr:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+.dataTable td {
+  padding: 8px;
+}

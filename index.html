@@ -7,6 +7,88 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="divReg">
+      <button class="btn1">Реєстрація</button>
+    </div>
+    <div class="divForm">
+      <div class="form-block">
+        <label for="inputFirstName">Введіть ім'я: </label>
+        <input type="text" id="inputFirstName" placeholder="Ім'я" />
+      </div>
+      <div class="form-block">
+        <label for="inputLastName">Введіть прізвище: </label>
+        <input type="text" id="inputLastName" placeholder="Прізвище" />
+      </div>
+      <div class="form-block">
+        <label for="inputBirth">Введіть дату народження: </label>
+        <input type="date" id="inputBirth" />
+      </div>
+      <div class="form-block">
+        <fieldset>
+          <legend>Виберіть стать:</legend>
+          <div>
+            <input
+              type="radio"
+              id="inputGenderMale"
+              name="gender"
+              value="Чоловіча"
+            />
+            <label for="inputGenderMale">Чоловіча</label>
+            <input
+              type="radio"
+              id="inputGenderFemale"
+              name="gender"
+              value="Жіноча"
+            />
+            <label for="inputGenderFemale">Жіноча</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-block">
+        <label for="selectCity">Виберть місто: </label>
+        <select id="selectCity"></select>
+      </div>
+      <div class="form-block">
+        <label for="adress">Введіть Вашу адресу: </label>
+        <textarea name="adress" id="adress" placeholder="адреса"></textarea>
+      </div>
+      <div class="form-block">
+        <fieldset>
+          <legend>Вкажіть якими мовами Ви володієте:</legend>
+          <div>
+            <input type="checkbox" id="inputLangUkr" name="lang" />
+            <label for="inputLangUkr">Українська</label>
+            <input type="checkbox" id="inputLangEng" name="lang" />
+            <label for="inputLangEng">Англійська</label>
+            <input type="checkbox" id="inputLangGerm" name="lang" />
+            <label for="inputLangGerm">Німецька</label>
+            <input type="checkbox" id="inputNextlang" name="lang" />
+            <label for="inputNextlang">інші</label>
+          </div>
+        </fieldset>
+      </div>
+      <!-- <div class="form-block">
+        <label for="login">Задайте Логін: </label>
+        <input type="login" id="login" placeholder="логін" />
+      </div>
+      <div class="form-block">
+        <label for="password">Задайте Пароль: </label>
+        <input type="password" id="password" placeholder="пароль" />
+      </div> -->
+      <div class="btnPush">
+        <button class="btn2">Зберегти</button>
+      </div>
+    </div>
+    <table class="dataTable">
+      <thead>
+        <tr>
+          <th>Дані</th>
+          <th>Значення</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
     <script type="module" src="./script.js"></script>
   </body>
 </html>
